@@ -1,10 +1,8 @@
 import { Link } from "@heroui/link";
-import { Snippet } from "@heroui/snippet";
-import { Code } from "@heroui/code";
 import { button as buttonStyles } from "@heroui/theme";
 
 import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
+import { title } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
 import LetterGlitch from "@/components/LetterGlich";
@@ -71,11 +69,11 @@ export default function IndexPage() {
                   className={`${title()} text-[#40e6b9]`} // teal text
                 />
 
-               
- 
-
-{/* Example 3: Animate on view (runs once) */}
-<DecryptedText className="text-xl font-bold " text="I’m Arsh Siddiqui — a Full Stack Developer dedicated to designing sleek, modern, and high-performing websites that leave a lasting impression." />
+                {/* Example 3: Animate on view (runs once) */}
+                <DecryptedText
+                  className="text-xl font-bold"
+                  text="I’m Arsh Siddiqui — a Full Stack Developer dedicated to designing sleek, modern, and high-performing websites that leave a lasting impression."
+                />
               </div>
 
               {/* CTA Buttons */}

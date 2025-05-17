@@ -1,7 +1,7 @@
 import { motion, Transition } from 'framer-motion';
 import { useEffect, useRef, useState, useMemo } from 'react';
 
-type BlurText = {
+interface BlurTextProps {
   text?: string;
   delay?: number;
   className?: string;
@@ -14,7 +14,7 @@ type BlurText = {
   easing?: (t: number) => number;
   onAnimationComplete?: () => void;
   stepDuration?: number;
-};
+}
 
 const buildKeyframes = (
   from: Record<string, string | number>,
@@ -42,7 +42,7 @@ const BlurText: React.FC<BlurTextProps> = ({
   rootMargin = '0px',
   animationFrom,
   animationTo,
-  easing = (t) => t,
+  easing = (t: number): number => t,
   onAnimationComplete,
   stepDuration = 0.35,
 }) => {
@@ -100,15 +100,15 @@ const BlurText: React.FC<BlurTextProps> = ({
       className={className}
       style={{ display: 'flex', flexWrap: 'wrap' }}
     >
-      {elements.map((segment, index) => {
+      {elements.map((segment: string, index: number) => {
         const animateKeyframes = buildKeyframes(fromSnapshot, toSnapshots);
 
         const spanTransition: Transition = {
           duration: totalDuration,
           times,
           delay: (index * delay) / 1000,
+          ease: easing,
         };
-        (spanTransition as any).ease = easing;
 
         return (
           <motion.span
