@@ -21,7 +21,7 @@ export default function DocsPage() {
   <div>
    <div className="">
                   {/* Example 3: Animate on view (runs once) */}
-               <div className="text-xl text-white font-bold">
+               <div className="text-xl text-white font-bold py-12">
   
   
 
@@ -30,9 +30,9 @@ text="I’m a passionate "
 speed={100}
 maxIterations={20}
 characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+=[]{}|;:,.<>?/\\"
-className="revealed text-xl text-black dark:text-white font-bold"
+className="revealed text-3xl text-black dark:text-white font-bold"
 parentClassName="all-letters"
-encryptedClassName="encrypted text-xl text-[#40e6b9] font-bold"
+encryptedClassName="encrypted text-3xl text-[#40e6b9] font-bold"
 />
 
 
@@ -42,22 +42,25 @@ encryptedClassName="encrypted text-xl text-[#40e6b9] font-bold"
   text="Full Stack Developer"
   animateOn="view"
   revealDirection="center"
-   className="revealed text-xl text-[#40e6b9] font-bold"
-   encryptedClassName="encrypted text-xl text-[white] font-bold"
+   className="revealed text-3xl text-[#40e6b9] font-bold"
+   encryptedClassName="encrypted text-3xl text-[white] font-bold"
 />
 
 
 <DecryptedText
-text="with a sharp eye for design and a love  efficient code. From building responsive UIs to developing robust backend systems, I combine creativity and logic to craft digital experiences that not only look amazing but work flawlessly."
+text="with a sharp eye for design and a love  efficient code. From building responsive UIs to developing robust backend systems."
 speed={100}
 maxIterations={20}
 characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+=[]{}|;:,.<>?/\\"
-className="revealed text-xl text-black dark:text-white font-bold"
+className="revealed text-3xl text-black dark:text-white font-bold"
 parentClassName="all-letters"
-encryptedClassName="encrypted text-xl text-[#40e6b9]   font-bold"
+encryptedClassName="encrypted text-3xl text-[#40e6b9]   font-bold"
 />
-
+<div className="flex items-center justify-center py-2">
 <ShiftingDropDown/>
+</div>
+
+
  
 </div>
 
