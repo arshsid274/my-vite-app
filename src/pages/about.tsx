@@ -2,6 +2,7 @@ import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import FloatingPhone from "@/components/FloatingPhone";
 import DecryptedText from "@/components/DecryptedText";
+import { ShiftingDropDown } from "@/components/ShiftingDropDown";
 
 export default function DocsPage() {
   return (
@@ -28,9 +29,9 @@ text="I’m a passionate "
 speed={100}
 maxIterations={20}
 characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+=[]{}|;:,.<>?/\\"
-className="revealed text-2xl text-default-500 font-bold"
+className="revealed text-xl text-default-500 font-bold"
 parentClassName="all-letters"
-encryptedClassName="encrypted text-2xl text-default-500 font-bold"
+encryptedClassName="encrypted text-xl text-default-500 font-bold"
 />
 
 
@@ -40,8 +41,8 @@ encryptedClassName="encrypted text-2xl text-default-500 font-bold"
   text="Full Stack Developer"
   animateOn="view"
   revealDirection="center"
-   className="revealed text-2xl text-[#40e6b9] font-bold"
-   encryptedClassName="encrypted text-2xl text-[#40e6b9] font-bold"
+   className="revealed text-xl text-[#40e6b9] font-bold"
+   encryptedClassName="encrypted text-xl text-[#40e6b9] font-bold"
 />
 
 
@@ -50,10 +51,12 @@ text="with a sharp eye for design and a love  efficient code. From building resp
 speed={100}
 maxIterations={20}
 characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+=[]{}|;:,.<>?/\\"
-className="revealed text-2xl text-default-500 font-bold"
+className="revealed text-xl text-default-500 font-bold"
 parentClassName="all-letters"
-encryptedClassName="encrypted text-2xl text-default-500 font-bold"
+encryptedClassName="encrypted text-xl text-default-500 font-bold"
 />
+
+<ShiftingDropDown/>
  
 </div>
 
