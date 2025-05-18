@@ -7,7 +7,7 @@ import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
 import LetterGlitch from "@/components/LetterGlich";
 import BlurText from "@/components/BlurText";
-import DecryptedText from '@/components/DecryptedText';
+
 
 export default function IndexPage() {
   const handleAnimationComplete = () => {
@@ -69,11 +69,9 @@ export default function IndexPage() {
                   className={`${title()} text-[#40e6b9]`} // teal text
                 />
 
-                {/* Example 3: Animate on view (runs once) */}
-                <DecryptedText
-                  className="text-xl font-bold"
-                  text="I’m Arsh Siddiqui — a Full Stack Developer dedicated to designing sleek, modern, and high-performing websites that leave a lasting impression."
-                />
+                <br className="hidden lg:block" />
+
+                
               </div>
 
               {/* CTA Buttons */}
