@@ -8,12 +8,13 @@ export default function DocsPage() {
   return (
     <DefaultLayout>
       <section className="  ">
-        <div className="">
-          <h1 className={title()}>About Me</h1>
+        <div className="w-full text-center">
+         <h1 className={`${title()} text-center`}>About Me</h1>
+
 
         
 
-         <div className="grid grid-cols-2 gap-9 py-5 " >
+         <div className="grid  md:grid-cols-2 gap-9 py-5 " >
   <div className="">
     <FloatingPhone />
   </div>
@@ -29,9 +30,9 @@ text="I’m a passionate "
 speed={100}
 maxIterations={20}
 characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+=[]{}|;:,.<>?/\\"
-className="revealed text-xl text-default-500 font-bold"
+className="revealed text-xl text-black dark:text-white font-bold"
 parentClassName="all-letters"
-encryptedClassName="encrypted text-xl text-default-500 font-bold"
+encryptedClassName="encrypted text-xl text-[#40e6b9] font-bold"
 />
 
 
@@ -42,7 +43,7 @@ encryptedClassName="encrypted text-xl text-default-500 font-bold"
   animateOn="view"
   revealDirection="center"
    className="revealed text-xl text-[#40e6b9] font-bold"
-   encryptedClassName="encrypted text-xl text-[#40e6b9] font-bold"
+   encryptedClassName="encrypted text-xl text-[white] font-bold"
 />
 
 
@@ -51,9 +52,9 @@ text="with a sharp eye for design and a love  efficient code. From building resp
 speed={100}
 maxIterations={20}
 characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+=[]{}|;:,.<>?/\\"
-className="revealed text-xl text-default-500 font-bold"
+className="revealed text-xl text-black dark:text-white font-bold"
 parentClassName="all-letters"
-encryptedClassName="encrypted text-xl text-default-500 font-bold"
+encryptedClassName="encrypted text-xl text-[#40e6b9]   font-bold"
 />
 
 <ShiftingDropDown/>
