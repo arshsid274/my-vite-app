@@ -177,45 +177,40 @@ const Nub = ({ selected }: { selected: number | null }) => {
   );
 };
 
-const Products = () => {
+const Skills = () => {
   return (
     <div>
       <div className="flex gap-4">
         <div>
-          <h3 className="mb-2 text-sm font-medium">Startup</h3>
+          <h3 className="mb-2 text-sm font-medium">Language</h3>
           <a href="#" className="mb-1 block text-sm text-neutral-400">
-            Bookkeeping
+            Html
           </a>
           <a href="#" className="block text-sm text-neutral-400">
-            Invoicing
+            CSS
+          </a>
+           <a href="#" className="block text-sm text-neutral-400">
+            Javascript
           </a>
         </div>
         <div>
-          <h3 className="mb-2 text-sm font-medium">Scaleup</h3>
+          <h3 className="mb-2 text-sm font-medium">FrameWork</h3>
           <a href="#" className="mb-1 block text-sm text-neutral-400">
-            Live Coaching
+           React
           </a>
           <a href="#" className="mb-1 block text-sm text-neutral-400">
-            Reviews
+            Tailwind
           </a>
           <a href="#" className="block text-sm text-neutral-400">
-            Tax/VAT
+            Bootstrap
           </a>
         </div>
         <div>
-          <h3 className="mb-2 text-sm font-medium">Enterprise</h3>
+          <h3 className="mb-2 text-sm font-medium">Database & Tools</h3>
           <a href="#" className="mb-1 block text-sm text-neutral-400">
-            White glove
+            Mongo DB
           </a>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            SOX Compliance
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            Staffing
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            More
-          </a>
+         
         </div>
       </div>
 
@@ -227,7 +222,7 @@ const Products = () => {
   );
 };
 
-const Pricing = () => {
+const Experience = () => {
   return (
     <div className="grid grid-cols-3 gap-4 divide-x divide-neutral-700">
       <a
@@ -255,7 +250,7 @@ const Pricing = () => {
   );
 };
 
-const Blog = () => {
+const Education = () => {
   return (
     <div>
       <div className="grid grid-cols-2 gap-2">
@@ -294,15 +289,15 @@ const Blog = () => {
 
 const TABS = [
   {
-    title: "Products",
-    Component: Products,
+    title: "Skills",
+    Component: Skills,
   },
   {
-    title: "Pricing",
-    Component: Pricing,
+    title: "Experience",
+    Component: Experience,
   },
   {
-    title: "Blog",
-    Component: Blog,
+    title: "Education",
+    Component: Education,
   },
 ].map((n, idx) => ({ ...n, id: idx + 1 }));
