@@ -9,12 +9,12 @@ export default function DocsPage() {
     <DefaultLayout>
       <section className="  ">
         <div className="w-full text-center ">
-         <h1 className={`${title()} text-center  `}>About Me</h1>
+        <h1 className={`${title()} text-center `}>About Me</h1>
 
 
         
 
-         <div className="grid  md:grid-cols-2 md:gap-9   " >
+         <div className="grid  md:grid-cols-2 md:gap-9 py-4  " >
   <div className="">
     <FloatingPhone />
   </div>
