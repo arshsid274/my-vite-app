@@ -10,22 +10,26 @@ import VaslAi from "/src/assets/Vaslai.png"
 export default function DocsPage() {
   return (
     <DefaultLayout>
-      <section className="  w-full h-screen overflow-visible">
-        <div className=" text-center ">
-          <h1 className={`${title()} text-white text-center py-4`}>Portfolio</h1>
-        </div>
+      <section className=" relative w-full min-h-screen overflow-visible">
+       
 
-       <div className=" relative grid grid-rows-2">
+       <div className="  grid grid-rows-2">
         <div className="absolute top-0 left-0 w-screen h-screen ">
           <Aurora
-          className="fixed top-0 left-0 w-screen h-full z-10 "
+          className="fixed top-0 left-0 w-screen h-full z-0 "
           colorStops={["#00d8ff", "#7cff67", "#00d8ff"]}
           blend={0.5}
           amplitude={1.0}
           speed={0.5}
         />
         </div>
-        <div className="w-full h-full text-white flex flex-col items-center md:grid md:grid-cols-3 md:grid-rows-2 gap-8 md:gap-16 z-10">
+      </div>
+
+       <div className="relative z-10 text-center py-6 ">
+       <h1 className={`${title()} text-white text-center py-4`}>Portfolio</h1>
+        </div>
+
+       <div className="w-full h-full text-white flex flex-col items-center md:grid md:grid-cols-3 md:grid-rows-2 gap-8 md:gap-16 relative z-20">  
 <TiltedCard
   imageSrc={DesignOrientArcitect}
   altText="Design Orient Arcitect"
@@ -150,7 +154,6 @@ export default function DocsPage() {
           
          
     </div>
-       </div>
         
 
         
