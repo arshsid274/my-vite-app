@@ -2,6 +2,8 @@ import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import Aurora from "@/components/Aurora";
 import TiltedCard from "@/components/TiltedCard";
+import DesignOrientArcitect from "/src/assets/image.png";
+import VaslAi from "/src/assets/Vaslai.png"
 
 
 
@@ -23,14 +25,15 @@ export default function DocsPage() {
           speed={0.5}
         />
         </div>
-        <div className="w-full h-full text-white grid grid-cols-3 gap-5 z-10">
+        <div className="w-full h-full text-white flex flex-col items-center md:grid md:grid-cols-3 gap-8 md:gap-5 z-10">
 <TiltedCard
-  imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
+  imageSrc={DesignOrientArcitect}
   altText="Kendrick Lamar - GNX Album Cover"
   captionText="Kendrick Lamar - GNX"
-  containerHeight="300px"
+    className=""
+  containerHeight="250px"
   containerWidth="300px"
-  imageHeight="300px"
+  imageHeight="250px"
   imageWidth="300px"
   rotateAmplitude={12}
   scaleOnHover={1.2}
@@ -38,18 +41,19 @@ export default function DocsPage() {
   showTooltip={true}
   displayOverlayContent={true}
   overlayContent={
-    <p className="tilted-card-demo-text">Kendrick Lamar - GNX</p>
+    <p className="  tilted-card-demo-text">Design Orient Arcitect</p>
   }
   onClick={() => window.open("https://design-orient-arcitect.vercel.app/", "_blank")}
 />
 
 <TiltedCard
-  imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
+  imageSrc={VaslAi}
   altText="Kendrick Lamar - GNX Album Cover"
   captionText="Kendrick Lamar - GNX"
-  containerHeight="300px"
+    className=""
+  containerHeight="250px"
   containerWidth="300px"
-  imageHeight="300px"
+  imageHeight="250px"
   imageWidth="300px"
   rotateAmplitude={12}
   scaleOnHover={1.2}
@@ -57,19 +61,19 @@ export default function DocsPage() {
   showTooltip={true}
   displayOverlayContent={true}
   overlayContent={
-    <p className="tilted-card-demo-text">
-      Kendrick Lamar - GNX
-    </p>
+    <p className="  tilted-card-demo-text">Kendrick Lamar - GNX</p>
   }
+  onClick={() => window.open("https://vaslai-dashboard-collaboration.vercel.app/", "_blank")}
 />
 
 <TiltedCard
-  imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
+  imageSrc={DesignOrientArcitect}
   altText="Kendrick Lamar - GNX Album Cover"
   captionText="Kendrick Lamar - GNX"
-  containerHeight="300px"
+    className=""
+  containerHeight="250px"
   containerWidth="300px"
-  imageHeight="300px"
+  imageHeight="250px"
   imageWidth="300px"
   rotateAmplitude={12}
   scaleOnHover={1.2}
@@ -77,10 +81,9 @@ export default function DocsPage() {
   showTooltip={true}
   displayOverlayContent={true}
   overlayContent={
-    <p className="tilted-card-demo-text">
-      Kendrick Lamar - GNX
-    </p>
+    <p className="  tilted-card-demo-text">Kendrick Lamar - GNX</p>
   }
+  onClick={() => window.open("https://design-orient-arcitect.vercel.app/", "_blank")}
 />
 
 

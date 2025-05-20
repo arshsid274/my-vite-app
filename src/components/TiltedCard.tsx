@@ -16,6 +16,7 @@ interface TiltedCardProps {
   showTooltip?: boolean;
   overlayContent?: React.ReactNode;
   displayOverlayContent?: boolean;
+   className?: string;
   onClick?: () => void; // ✅ added click handler
 }
 
@@ -29,9 +30,9 @@ export default function TiltedCard({
   imageSrc,
   altText = "Tilted card image",
   captionText = "",
-  containerHeight = "300px",
+  containerHeight = "250px",
   containerWidth = "100%",
-  imageHeight = "300px",
+  imageHeight = "250px",
   imageWidth = "300px",
   scaleOnHover = 1.1,
   rotateAmplitude = 14,
@@ -39,7 +40,9 @@ export default function TiltedCard({
   showTooltip = true,
   overlayContent = null,
   displayOverlayContent = false,
-  onClick, // ✅ destructure it
+    className = "",
+    onClick, // ✅ Default value
+ 
 }: TiltedCardProps) {
   const ref = useRef<HTMLElement>(null);
   const x = useMotionValue(0);
@@ -93,8 +96,8 @@ export default function TiltedCard({
   return (
     <figure
       ref={ref}
-      onClick={onClick} // ✅ add click support here
-      className="relative w-full h-full [perspective:800px] flex flex-col items-center justify-center cursor-pointer"
+      className={`relative cursor-pointer transition-transform duration-300 ease-in-out ${className}`} // ✅ Used here
+      onClick={onClick}
       style={{
         height: containerHeight,
         width: containerWidth,
@@ -131,7 +134,7 @@ export default function TiltedCard({
 
         {displayOverlayContent && overlayContent && (
           <motion.div
-            className="absolute top-0 left-0 z-[2] will-change-transform [transform:translateZ(30px)]"
+            className="absolute left-16 top-16 center-0 z-[2] will-change-transform [transform:translateZ(30px)]"
           >
             {overlayContent}
           </motion.div>
