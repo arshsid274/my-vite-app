@@ -215,8 +215,8 @@ export default function Aurora(props: AuroraProps) {
 
   return (
     <div
-      ref={ctnDom}
-      className={`relative w-full h-full overflow-hidden ${className}`}
-    />
+  ref={ctnDom}
+  className={`fixed top-0 left-0 w-screen h-screen overflow-hidden ${className}`}
+/>
   );
 }

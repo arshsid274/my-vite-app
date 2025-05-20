@@ -18,14 +18,14 @@ export default function IndexPage() {
     <DefaultLayout>
       <div className="relative w-full h-screen overflow-hidden">
         {/* Background with glitch and blur */}
-        <div className="absolute inset-0 z-0 backdrop-blur-lg">
-          <LetterGlitch
-            glitchSpeed={50}
-            centerVignette={true}
-            outerVignette={false}
-            smooth={true}
-          />
-        </div>
+    <div className="fixed inset-0 z-0">
+  <LetterGlitch
+    glitchSpeed={50}
+    centerVignette={true}
+    outerVignette={false}
+    smooth={true}
+  />
+</div>
 
         {/* Foreground - centered frosted glass content box */}
         <div className="relative z-10 flex items-center justify-center h-full px-4">

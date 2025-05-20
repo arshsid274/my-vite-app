@@ -1,7 +1,7 @@
 import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import Aurora from "@/components/Aurora";
-import CircularGallery from "@/components/CircularGallery";
+import TiltedCard from "@/components/TiltedCard";
 
 
 
@@ -24,11 +24,66 @@ export default function DocsPage() {
         />
         </div>
         <div className="w-full h-full text-white grid grid-cols-3 gap-5 z-10">
-<div style={{ height: '600px', position: 'relative'  }}>
-  <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
-</div>
+<TiltedCard
+  imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
+  altText="Kendrick Lamar - GNX Album Cover"
+  captionText="Kendrick Lamar - GNX"
+  containerHeight="300px"
+  containerWidth="300px"
+  imageHeight="300px"
+  imageWidth="300px"
+  rotateAmplitude={12}
+  scaleOnHover={1.2}
+  showMobileWarning={false}
+  showTooltip={true}
+  displayOverlayContent={true}
+  overlayContent={
+    <p className="tilted-card-demo-text">Kendrick Lamar - GNX</p>
+  }
+  onClick={() => window.open("https://design-orient-arcitect.vercel.app/", "_blank")}
+/>
 
-<h1>hjvhjvvhjvjhvhjv</h1>
+<TiltedCard
+  imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
+  altText="Kendrick Lamar - GNX Album Cover"
+  captionText="Kendrick Lamar - GNX"
+  containerHeight="300px"
+  containerWidth="300px"
+  imageHeight="300px"
+  imageWidth="300px"
+  rotateAmplitude={12}
+  scaleOnHover={1.2}
+  showMobileWarning={false}
+  showTooltip={true}
+  displayOverlayContent={true}
+  overlayContent={
+    <p className="tilted-card-demo-text">
+      Kendrick Lamar - GNX
+    </p>
+  }
+/>
+
+<TiltedCard
+  imageSrc="https://i.scdn.co/image/ab67616d0000b273d9985092cd88bffd97653b58"
+  altText="Kendrick Lamar - GNX Album Cover"
+  captionText="Kendrick Lamar - GNX"
+  containerHeight="300px"
+  containerWidth="300px"
+  imageHeight="300px"
+  imageWidth="300px"
+  rotateAmplitude={12}
+  scaleOnHover={1.2}
+  showMobileWarning={false}
+  showTooltip={true}
+  displayOverlayContent={true}
+  overlayContent={
+    <p className="tilted-card-demo-text">
+      Kendrick Lamar - GNX
+    </p>
+  }
+/>
+
+
           
          
     </div>
