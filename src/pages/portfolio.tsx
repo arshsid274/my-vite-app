@@ -4,6 +4,8 @@ import Aurora from "@/components/Aurora";
 import TiltedCard from "@/components/TiltedCard";
 import DesignOrientArcitect from "/src/assets/image.png";
 import VaslAi from "/src/assets/Vaslai.png"
+import ShineTravels from "/src/assets/ShineTravels.png"
+import LiveCrypto from "/src/assets/LiveCrypto.png"
 
 
 
@@ -13,7 +15,7 @@ export default function DocsPage() {
       <section className=" relative w-full min-h-screen overflow-visible">
        
 
-       <div className="  grid grid-rows-2">
+       <div className="  grid grid-rows-2 ">
         <div className="absolute top-0 left-0 w-screen h-screen ">
           <Aurora
           className="fixed top-0 left-0 w-screen h-full z-0 "
@@ -29,7 +31,7 @@ export default function DocsPage() {
        <h1 className={`${title()} text-white text-center py-4`}>Portfolio</h1>
         </div>
 
-       <div className="w-full h-full text-white flex flex-col items-center md:grid md:grid-cols-3 md:grid-rows-2 gap-8 md:gap-16 relative z-20">  
+       <div className="w-full h-full text-white flex flex-col items-center md:grid md:grid-cols-3 md:grid-rows-2 gap-8 md:gap-24 relative z-20">  
 <TiltedCard
   imageSrc={DesignOrientArcitect}
   altText="Design Orient Arcitect"
@@ -45,7 +47,7 @@ export default function DocsPage() {
   showTooltip={true}
   displayOverlayContent={true}
   overlayContent={
-    <p className=" dark:text-white text-black bg-gradient-to-r from-[#00d8ff]  to-[#7cff67] text-2xl font-semibold tilted-card-demo-text rounded-lg px-2">Design Orient Arcitect</p>
+    <p className=" dark:text-white text-center text-black bg-gradient-to-r from-[#00d8ff]  to-[#7cff67] text-2xl font-semibold tilted-card-demo-text rounded-lg px-2">Design Orient Arcitect</p>
   }
   onClick={() => window.open("https://github.com/arshsid274", "_blank")}
 />
@@ -65,15 +67,15 @@ export default function DocsPage() {
   showTooltip={true}
   displayOverlayContent={true}
   overlayContent={
-    <p className=" dark:text-white text-black bg-gradient-to-r from-[#00d8ff]  to-[#7cff67] text-2xl font-semibold tilted-card-demo-text rounded-lg px-2">Vaslai</p>
+    <p className="  text-center dark:text-white  text-black bg-gradient-to-r from-[#00d8ff]  to-[#7cff67] text-2xl font-semibold tilted-card-demo-text rounded-lg px-2">Vaslai</p>
   }
   onClick={() => window.open("https://github.com/arshsid274", "_blank")}
 />
 
 <TiltedCard
-  imageSrc={DesignOrientArcitect}
-  altText="Kendrick Lamar - GNX Album Cover"
-  captionText="Kendrick Lamar - GNX"
+  imageSrc={ShineTravels}
+  altText="Shine Travels"
+  captionText="Shine Travels"
     className=""
   containerHeight="250px"
   containerWidth="300px"
@@ -85,15 +87,15 @@ export default function DocsPage() {
   showTooltip={true}
   displayOverlayContent={true}
   overlayContent={
-    <p className="  tilted-card-demo-text">Kendrick Lamar - GNX</p>
+    <p className="  text-center dark:text-white  text-black bg-gradient-to-r from-[#00d8ff]  to-[#7cff67] text-2xl font-semibold tilted-card-demo-text rounded-lg px-2">Shine Travels</p>
   }
   onClick={() => window.open("https://github.com/arshsid274", "_blank")}
 />
 
 <TiltedCard
-  imageSrc={DesignOrientArcitect}
-  altText="Kendrick Lamar - GNX Album Cover"
-  captionText="Kendrick Lamar - GNX"
+  imageSrc={LiveCrypto}
+  altText="Live Crypto"
+  captionText="Live Crypto Prices"
     className=""
   containerHeight="250px"
   containerWidth="300px"
@@ -105,7 +107,7 @@ export default function DocsPage() {
   showTooltip={true}
   displayOverlayContent={true}
   overlayContent={
-    <p className="  tilted-card-demo-text">Design Orient Arcitect</p>
+    <p className="  text-center dark:text-white  text-black bg-gradient-to-r from-[#00d8ff]  to-[#7cff67] text-2xl font-semibold tilted-card-demo-text rounded-lg px-2">Live Crypto</p>
   }
   onClick={() => window.open("https://github.com/arshsid274", "_blank")}
 />
