@@ -24,6 +24,7 @@
     "@heroui/theme": "2.4.15",
     "@heroui/use-theme": "2.1.8",
     "@hugeicons/react": "^1.0.5",
+    "@microsoft/clarity": "^1.0.0",
     "@react-aria/visually-hidden": "3.8.22",
     "@react-types/shared": "3.29.0",
     "clsx": "2.1.1",
