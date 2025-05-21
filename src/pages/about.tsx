@@ -3,6 +3,7 @@ import DefaultLayout from "@/layouts/default";
 import FloatingPhone from "@/components/FloatingPhone";
 import DecryptedText from "@/components/DecryptedText";
 import { ShiftingDropDown } from "@/components/ShiftingDropDown";
+import BlurText from "@/components/BlurText";
 
 export default function DocsPage() {
   return (
@@ -32,7 +33,9 @@ maxIterations={20}
 characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+=[]{}|;:,.<>?/\\"
 className="revealed text-xl md:text-2xl lg:text-3xl text-black dark:text-white font-bold"
 parentClassName="all-letters"
-encryptedClassName="encrypted text-xl md:text-2xl lg:text-3xl text-[#40e6b9] font-bold"
+encryptedClassName="encrypted text-xl md:text-xl lg:text-2xl text-[#40e6b9] font-bold"
+
+
 />
 
 
@@ -40,10 +43,12 @@ encryptedClassName="encrypted text-xl md:text-2xl lg:text-3xl text-[#40e6b9] fon
 
 <DecryptedText
   text="Full Stack Developer"
+  speed={150}
   animateOn="view"
+  characters="ABCDEFG3456789!@#$%^&*()_-+=[]{}|;:,.<>?/\\"
   revealDirection="center"
-   className="revealed text-2xl md:text-3xl lg:text-4xl text-[#40e6b9] font-bold"
-   encryptedClassName="encrypted text-2xl md:text-3xl lg:text-4xl text-[white] font-bold"
+   className="revealed font-sans text-2xl md:text-3xl lg:text-4xl text-[#40e6b9] font-bold"
+   encryptedClassName="encrypted font-sans  text-2xl md:text-3xl lg:text-4xl text-[#40e6b9] font-bold"
 />
 
 
@@ -54,9 +59,9 @@ maxIterations={20}
 characters="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+=[]{}|;:,.<>?/\\"
 className="revealed text-xl md:text-2xl lg:text-3xl text-black dark:text-white font-bold"
 parentClassName="all-letters"
-encryptedClassName="encrypted text-xl md:text-2xl lg:text-3xl text-[#40e6b9]   font-bold"
+encryptedClassName="encrypted text-xl md:text-xl lg:text-2xl text-[#40e6b9]   font-bold"
 />
-<div className="flex items-center justify-center py-2">
+<div className="flex items-center justify-center py-2 pt-4">
 <ShiftingDropDown/>
 </div>
 
