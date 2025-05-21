@@ -3,7 +3,7 @@ import DefaultLayout from "@/layouts/default";
 import FloatingPhone from "@/components/FloatingPhone";
 import DecryptedText from "@/components/DecryptedText";
 import { ShiftingDropDown } from "@/components/ShiftingDropDown";
-import BlurText from "@/components/BlurText";
+
 
 export default function DocsPage() {
   return (
