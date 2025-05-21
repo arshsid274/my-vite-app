@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 
 
 import IndexPage from "@/pages/index";
