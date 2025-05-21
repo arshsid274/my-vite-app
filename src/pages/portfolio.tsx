@@ -67,7 +67,7 @@ export default function DocsPage() {
   overlayContent={
     <p className=" dark:text-white text-black bg-gradient-to-r from-[#00d8ff]  to-[#7cff67] text-2xl font-semibold tilted-card-demo-text rounded-lg px-2">Vaslai</p>
   }
-  onClick={() => window.open("https://vaslai-dashboard-collaboration.vercel.app/", "_blank")}
+  onClick={() => window.open("https://vaslai-dashboard-collaboration.vercel.app", "_blank")}
 />
 
 <TiltedCard
@@ -87,7 +87,7 @@ export default function DocsPage() {
   overlayContent={
     <p className="  tilted-card-demo-text">Kendrick Lamar - GNX</p>
   }
-  onClick={() => window.open("https://design-orient-arcitect.vercel.app/", "_blank")}
+  onClick={() => window.open("https://design-orient-arcitect.vercel.app", "_blank")}
 />
 
 <TiltedCard
@@ -107,7 +107,7 @@ export default function DocsPage() {
   overlayContent={
     <p className="  tilted-card-demo-text">Design Orient Arcitect</p>
   }
-  onClick={() => window.open("https://design-orient-arcitect.vercel.app/", "_blank")}
+  onClick={() => window.open("https://shine-travels-chi.vercel.app", "_blank")}
 />
 
 <TiltedCard
