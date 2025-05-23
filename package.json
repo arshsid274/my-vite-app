@@ -30,12 +30,14 @@
     "clsx": "2.1.1",
     "framer-motion": "^11.18.2",
     "ogl": "^1.0.11",
+    "postprocessing": "^6.37.3",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-icons": "^5.5.0",
     "react-router-dom": "6.23.0",
     "tailwind-variants": "0.3.0",
-    "tailwindcss": "3.4.16"
+    "tailwindcss": "3.4.16",
+    "three": "^0.176.0"
   },
   "devDependencies": {
     "@eslint/compat": "1.2.8",
@@ -44,6 +46,7 @@
     "@types/node": "20.5.7",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
+    "@types/three": "^0.176.0",
     "@typescript-eslint/eslint-plugin": "8.31.1",
     "@typescript-eslint/parser": "8.31.1",
     "@vitejs/plugin-react": "4.4.1",
